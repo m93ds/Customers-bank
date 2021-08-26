@@ -110,7 +110,7 @@ from seaborn import barplot
 from seaborn import violinplot
 from seaborn import relplot
 
-# Graficamos tres variables (Balance y job)
+# Graficamos dos variables (Balance y job)
 graf1 = sb.barplot(x='job', y='balance', data= data, estimator=lambda job: len(job) / len(data) * 100)
 graf1.set(xlabel="Job")
 graf1.set(ylabel="Balance")
